@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Practice6.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            &nbsp;
+            <asp:Label ID="Label1" runat="server"  Text="Это содержимое мастер-страницы " style="text-align: center"></asp:Label>
+&nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+                <p style="text-align: center">
+                    Это содержимое по умолчаинию PlaceHolder1</p>
+                <p style="text-align: center">
+                   В интернете зачастую можно встретить формы, в которых заголовки полей отсутствуют, а их роль выполняют плейсхолдеры. 
+                    Как правило, так делают для уменьшения размера самой формы и избавления от лишнего «шума». </p>
+            </asp:ContentPlaceHolder>
+        <br />
+        <br />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            <asp:Panel ID="Panel1" runat="server">
+            </asp:Panel>
+        </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
